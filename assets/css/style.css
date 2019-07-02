@@ -1,0 +1,9 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0px;
+    background-image: url("../images/asteroids.jpg");
+}
