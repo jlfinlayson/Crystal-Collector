@@ -5,33 +5,50 @@
 
 body {
     margin: 0px;
-    background-image: url("../images/asteroids.jpg");
 }
 
-#container {
+/* #images-box{
 
-}
-
-#images-box{
-
-}
+} */
 
 #instruction-box{
+    background-color: #262730;
+    width: 400 px;
+    height: auto;
+}
 
+p{
+    font-size: 20px;
+    text-align: center;
 }
 
 #score-box{
+    background-color: #493843;
+    height: 100px;
+    width: 100px;
 
 }
 
 #target-box{
-
+    background-color: #D33F49;
+    height: 100px;
+    width: 250 px;
+    padding-top: 25px;
+    font-size: 80px;
+    text-align: center;
 }
 
 #text-box{
+    background-color: #77BA99;
+}
 
+#title{
+ width: 400px;
+ height: auto;
+ text-align: center;
 }
 
 #total-box{
-
+width: 400px;
+text-align: center;
 }
