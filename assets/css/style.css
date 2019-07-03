@@ -3,6 +3,11 @@
     color: white;
 }
 
+#blue-crystal{
+    width: 100px;
+    height: 100px;
+}
+
 body {
     margin: 0px;
 }
@@ -11,15 +16,30 @@ body {
 
 } */
 
+#green-crystal{
+    width: 100px;
+    height: 100px;
+}
+
 #instruction-box{
     background-color: #262730;
     width: 400 px;
     height: auto;
 }
 
+#orange-crystal{
+    width: 100px;
+    height: 100px;
+}
+
 p{
     font-size: 20px;
     text-align: center;
+}
+
+#red-crystal{
+    width: 100px;
+    height: 100px;
 }
 
 #score-box{
