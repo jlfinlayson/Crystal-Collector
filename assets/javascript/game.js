@@ -63,27 +63,27 @@ function scoreRules() {
 $("#blue-crystal").on("click", function () {
     sumGuess = blueCrystal + sumGuess;
     console.log(sumGuess);
-    $("target-number").text(sumGuess);
+    $("sum-guess").text(sumGuess);
     scoreRules();
 });
 
 $("#red-crystal").on("click", function () {
     sumGuess = redCrystal + sumGuess;
     console.log(sumGuess);
-    $("target-number").text(sumGuess);
+    $("sum-guess").text(sumGuess);
     scoreRules();
 });
 
 $("#green-crystal").on("click", function () {
     sumGuess = greenCrystal + sumGuess;
     console.log(sumGuess);
-    $("target-number").text(sumGuess);
+    $("sum-guess").text(sumGuess);
     scoreRules();
 });
 
 $("#orange-crystal").on("click", function () {
     sumGuess = orangeCrystal + sumGuess;
     console.log(sumGuess);
-    $("target-number").text(sumGuess);
+    $("sum-guess").text(sumGuess);
     scoreRules();
 });
