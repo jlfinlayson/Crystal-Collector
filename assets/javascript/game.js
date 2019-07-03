@@ -59,3 +59,31 @@ function scoreRules() {
 };
 
 // Crystal images have values and can be clicked
+
+$("#blue-crystal").on("click", function () {
+    sumGuess = blueCrystal + sumGuess;
+    console.log(sumGuess);
+    $("target-number").text(sumGuess);
+    scoreRules();
+});
+
+$("#red-crystal").on("click", function () {
+    sumGuess = redCrystal + sumGuess;
+    console.log(sumGuess);
+    $("target-number").text(sumGuess);
+    scoreRules();
+});
+
+$("#green-crystal").on("click", function () {
+    sumGuess = greenCrystal + sumGuess;
+    console.log(sumGuess);
+    $("target-number").text(sumGuess);
+    scoreRules();
+});
+
+$("#orange-crystal").on("click", function () {
+    sumGuess = orangeCrystal + sumGuess;
+    console.log(sumGuess);
+    $("target-number").text(sumGuess);
+    scoreRules();
+});
