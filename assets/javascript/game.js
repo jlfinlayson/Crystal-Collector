@@ -9,11 +9,24 @@ var orangeCrystal = 0;
 
 // Function to generate crystal and total values
 
-$( document ).ready(function() {
+$(document).ready(function() {
     console.log("start");
 blueCrystal = Math.floor(Math.random() * 10) + 1;
 redCrystal = Math.floor(Math.random() * 10) + 1;
 greenCrystal = Math.floor(Math.random() * 10) + 1;
 orangeCrystal = Math.floor(Math.random() * 10) + 1;
 target = Math.floor(Math.random() * 100) + 4;
+
+$("#target-number").text(target);
+console.log(target);
 });
+
+function scoreRules () {
+    if (sumGuess === target) {
+        wins++;
+        $("wins").text(wins);
+    } else if (sumGuess > target) {
+        losses++;
+        $("losses").text(losses);
+    }
+};
