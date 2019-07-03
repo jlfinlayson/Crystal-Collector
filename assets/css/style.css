@@ -9,6 +9,7 @@
 }
 
 body {
+    background-image: url("assets/images/asteroids.jpg");
     margin: 0px;
 }
 
@@ -63,12 +64,15 @@ p{
 }
 
 #title{
- width: 400px;
- height: auto;
- text-align: center;
+background-color: #77BA99;
+width: 400px;
+height: auto;
+text-align: center;
 }
 
 #total-box{
+background-color: #493843;
 width: 400px;
+height: 100px;
 text-align: center;
 }

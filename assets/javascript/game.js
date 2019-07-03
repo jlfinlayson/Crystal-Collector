@@ -47,12 +47,12 @@ function reset() {
 function scoreRules() {
     if (sumGuess === target) {
         wins++;
-        $("wins").text(wins);
+        $("#wins-text").text(wins);
         console.log("win");
         reset();
     } else if (sumGuess > target) {
         losses++;
-        $("losses").text(losses);
+        $("#losses-text").text(losses);
         console.log("loss");
         reset();
     }
@@ -63,27 +63,27 @@ function scoreRules() {
 $("#blue-crystal").on("click", function () {
     sumGuess = blueCrystal + sumGuess;
     console.log(sumGuess);
-    $("sum-guess").text(sumGuess);
+    $("#sum-guess").text(sumGuess);
     scoreRules();
 });
 
 $("#red-crystal").on("click", function () {
     sumGuess = redCrystal + sumGuess;
     console.log(sumGuess);
-    $("sum-guess").text(sumGuess);
+    $("#sum-guess").text(sumGuess);
     scoreRules();
 });
 
 $("#green-crystal").on("click", function () {
     sumGuess = greenCrystal + sumGuess;
     console.log(sumGuess);
-    $("sum-guess").text(sumGuess);
+    $("#sum-guess").text(sumGuess);
     scoreRules();
 });
 
 $("#orange-crystal").on("click", function () {
     sumGuess = orangeCrystal + sumGuess;
     console.log(sumGuess);
-    $("sum-guess").text(sumGuess);
+    $("#sum-guess").text(sumGuess);
     scoreRules();
 });
