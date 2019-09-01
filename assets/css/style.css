@@ -1,5 +1,5 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     color: white;
 }
 
@@ -14,24 +14,6 @@ body {
     margin: 0px;
 }
 
-#box{
-    width: 400px;
-    overflow: hidden;
-}
-
-#container {
-    margin-left: 10px;
-    width: 460px;
-    overflow: hidden;
-}
-
-#images-box{
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-
-}
 
 #green-crystal{
     width: 100px;
@@ -53,15 +35,18 @@ h2{
     text-align: center;
 }
 
-#instruction-box{
-    background-color: #262730;
-    width: 400px;
-    height: 300px;
-    padding: 30px;
+h3 {
+    font-size: 25px;
+}
+
+p{
+    font-family: 'Montserrat';
     font-size: 12px;
     text-align: center;
-    line-break: 10px;
-    margin-bottom: 10px;
+}
+
+.jumbotron {
+    background-color: #77BA99;
 }
 
 #orange-crystal{
@@ -75,46 +60,12 @@ h2{
     padding-left: 15px;
 }
 
-#score-box{
-    background-color: #493843;
-    height: 100px;
-    width: 200px;
-    text-align: center;
-    overflow: hidden;
-
-}
-
-#target-number{
-    font-size: 80px;
-    text-align:center;
-}
-
-#target-box{
-    background-color: #D33F49;
-    display: block;
-    height: 100px;
-    width: 200px;
-    margin-right: 30px;
-}
-
-
-
-#text-box{
-    background-color: #77BA99;
-}
-
-#title{
-background-color: #77BA99;
-width: 400px;
-height: 100px;
-padding-left: 30px;
-padding-right: 30px;
-margin-bottom: 10px;
-}
-
-#total-box{
+.target{
 background-color: #493843;
-width: 400px;
-height: 100px;
-text-align: center;
 }
+
+.your-score{
+    background-color: #D33F49;
+}
+
+

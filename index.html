@@ -5,59 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicon -->
     <link rel="icon" href="assets/images/gem.png" type="image/favicon" sizes="16x16">
     <title>Crystal Collector Game</title>
+    <!-- Reset Stylesheet -->
     <link rel="stylesheet" type="reset/css" href="assets/css/reset.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Personal Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
     <div id="container">
-        <div id="title">
-            <h1>Crystals Collector!</h1>
-        </div>
-        <div id="instruction-box">
-            <p>You will be given a random number at the start of the game.</p>
-            <br>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-                total score.</p>
-            <br>
-            <p>You win the game by matching your total score to the random number. You lose the game if your total score
-                goes above the random number.</p>
-            <br>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <br>
-            <p>Each time when the game starts, the game will change the calues of each crystal.</p>
-        </div>
-        
-        <div id="box">
-        <div id="target-box">
-            <strong><h2 id="target-number"></h2></strong>
-
-        <div id="score-box">
-                <p>Wins: <span id="wins-text"></span></p>
-                <p>Losses: <span id="losses-text"></span></p>
+        <div class="jumbotron w-75 p-3 mx-auto mt-4">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Crystal Collector!</h1>
+                </div>
             </div>
-        </div>
-
-        <div id="text-box">
-                <p>Your total score is:</p>
+            <div class="row">
+                <div class="col-12">
+                    <p>Welcome to Crystal Collector! Click any crystal to start Each crystal has a unique value that is
+                        only revealed after clicking it. Try to get your total score to match the target number. But
+                        beware, you'll lose the round if your total score is too high. Good luck!</p>
+                </div>
             </div>
-    
-            <div id="total-box">
-                <p id="sum-guess"></p>
+            <div class="row">
+                <div class="col-6">
+                    <p class="text-right">Wins: <span id="wins-text">0</span></p>
+
+                </div>
+                <div class="col-6">
+                    <p class="text-left">Losses: <span id="losses-text">0</span></p>
+                </div>
             </div>
 
-        <div id="images-box">
-            <img id="blue-crystal" src="assets/images/crystal (1).png" alt="blue crystal icon">
-            <img id="red-crystal" src="assets/images/ruby.png" alt="red crystal icon">
-            <img id="green-crystal" src="assets/images/crystal.png" alt="green crystal icon">
-            <img id="orange-crystal" src="assets/images/gem.png" alt="orange crystal icon">
-        </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <h3 class="target">Target Score: <span id="target-number">0</span></h3>
+                </div>
+                <div class="col-3">
+                    <h3 class="your-score">Your Score: <span id="sum-guess">0</span></h3>
+                </div>
+                <div class="col-3"></div>
+            </div>
+
+
+            <div class="d-flex justify-content-around">
+                <img id="blue-crystal" src="assets/images/crystal (1).png" alt="blue crystal icon">
+                <img id="red-crystal" src="assets/images/ruby.png" alt="red crystal icon">
+                <img id="green-crystal" src="assets/images/crystal.png" alt="green crystal icon">
+                <img id="orange-crystal" src="assets/images/gem.png" alt="orange crystal icon">
+            </div>
+
 
         </div>
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
