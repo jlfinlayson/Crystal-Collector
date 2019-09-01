@@ -12,4 +12,4 @@ Crystal Collector is a number guessing game that includes 4 crystals and a rando
 
  ### Demo
  
- * [DEMO](https://jlfinlayson.github.io/Crystal-Collector/){:target="_blank"}
+ * [DEMO](https://jlfinlayson.github.io/Crystal-Collector/)
