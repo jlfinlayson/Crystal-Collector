@@ -48,11 +48,13 @@ function scoreRules() {
     if (sumGuess === target) {
         wins++;
         $("#wins-text").text(wins);
+        $("#sum-guess").text(0);
         console.log("win");
         reset();
     } else if (sumGuess > target) {
         losses++;
         $("#losses-text").text(losses);
+        $("#sum-guess").text(0);
         console.log("loss");
         reset();
     }
