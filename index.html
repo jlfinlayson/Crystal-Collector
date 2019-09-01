@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Shrikhand&display=swap"
+        rel="stylesheet">
     <!-- Personal Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -22,52 +24,55 @@
 
 <body>
     <div id="container">
-        <div class="jumbotron w-75 p-3 mx-auto mt-4">
-            <div class="row">
+        <div class="jumbotron w-50 p-3 mx-auto mt-5 shadow-lg">
+            <div class="row my-3">
                 <div class="col-12">
                     <h1>Crystal Collector!</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-4 mx-5">
                 <div class="col-12">
-                    <p>Welcome to Crystal Collector! Click any crystal to start Each crystal has a unique value that is
-                        only revealed after clicking it. Try to get your total score to match the target number. But
-                        beware, you'll lose the round if your total score is too high. Good luck!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <p class="text-right">Wins: <span id="wins-text">0</span></p>
-
-                </div>
-                <div class="col-6">
-                    <p class="text-left">Losses: <span id="losses-text">0</span></p>
+                    <p>Welcome to Crystal Collector! Click any crystal to start. Each crystal has a unique value that is
+                        only revealed after clicking it. Try to get your total score to match the target number. But beware, you'll lose the round if your total score is too high. Good luck!</p>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-3"></div>
-                <div class="col-3">
-                    <h3 class="target">Target Score: <span id="target-number">0</span></h3>
+                <div class="col-3 border rounded border-style pt-2 ml-n3">
+                    <h2 class="target text-center">Target</h2>
+                     <h3 class="text-center" id="target-number">0</h3>
                 </div>
-                <div class="col-3">
-                    <h3 class="your-score">Your Score: <span id="sum-guess">0</span></h3>
+                <div class="col-3 border rounded border-style pt-2 ml-3">
+                    <h2 class="your-score text-center">Score </h2> 
+                    <h3 class="text-center" id="sum-guess">0</h3>
                 </div>
                 <div class="col-3"></div>
             </div>
 
 
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-around mt-5 mb-5">
                 <img id="blue-crystal" src="assets/images/crystal (1).png" alt="blue crystal icon">
                 <img id="red-crystal" src="assets/images/ruby.png" alt="red crystal icon">
                 <img id="green-crystal" src="assets/images/crystal.png" alt="green crystal icon">
                 <img id="orange-crystal" src="assets/images/gem.png" alt="orange crystal icon">
             </div>
 
+            <div class="row">
+                    <div class="col-6">
+                        <h4 class="text-right">Wins: <span id="wins-text">0</span></h4>
+    
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-left">Losses: <span id="losses-text">0</span></h4>
+                    </div>
+                </div>
+
 
         </div>
 
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
